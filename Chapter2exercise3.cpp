@@ -2,8 +2,7 @@
 Programmer: Sebastian Rollings
 Date: September 2025
 Requirements:
-Write a program that will compute the total sales tax on a $95 purchase. 
-Assume the state sales tax is 4 percent, and the county sales tax is two percent.
+Write a program that will compute the total sales tax.
 */
 
 #include <iostream>
@@ -11,11 +10,23 @@ using namespace std;
 
 int main()
 {
-	int purchase_price = 95;
-	double stateSalesTaxRate = 0.04;
-	double countySalesTaxRate = 0.02;
+	double purchase_price;
+	double stateSalesTaxRate;
+	double countySalesTaxRate;
 	double stateSalesTax;
 	double countySalesTax;
+
+	std::cout << "Enter the purchase_price:";
+	std::cin >> purchase_price;
+	std::cout << endl;
+
+	std::cout << "Enter the stateSalesTaxRate:";
+	std::cin >> stateSalesTaxRate;
+	std::cout << endl;
+
+	std::cout << "Enter the countySalesTaxRate:";
+	std::cin >> countySalesTaxRate;
+	std::cout << endl;
 
 	stateSalesTax = purchase_price * stateSalesTaxRate;
 	countySalesTax = purchase_price * countySalesTaxRate;
